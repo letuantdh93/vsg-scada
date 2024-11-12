@@ -35,7 +35,10 @@ function makeDraggable(element) {
   }
 }
 
-function editWidget() {
+async function editWidget() {
+  // Tải dữ liệu từ tệp JSON
+  const response = await fetch("./data/setting.json");
+  const data = await response.json();
   let tittle = "";
   let divId = "";
   let top = "";
