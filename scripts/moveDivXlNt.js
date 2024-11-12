@@ -91,7 +91,7 @@ async function editWidget() {
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify(updatedWidget),
+            body: JSON.stringify(editWidget),
           })
             .then((response) => response.json())
             .then((data) => console.log(data))
@@ -101,7 +101,7 @@ async function editWidget() {
         }
       } catch (error) {
         console.error("Lỗi chung:", error);
-        console.log(JSON.stringify(updatedWidget));
+        console.log(JSON.stringify(editWidget));
       }
     });
   });
