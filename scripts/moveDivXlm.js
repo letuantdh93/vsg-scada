@@ -43,15 +43,17 @@ async function editWidget() {
   let divId = "";
   let top = "";
   let left = "";
+  let style = "";
+  let inputType = "tcp";
   let width = "";
   let height = "";
   let id = "";
-  let updatedWidget = {
+  let editWidget = {
     tittle,
     top,
     left,
-    style: "gauge",
-    inputType: "tcp",
+    style,
+    inputType,
     width,
     height,
     id,
