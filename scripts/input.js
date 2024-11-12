@@ -101,7 +101,7 @@ function styleGauge() {
   }
   try {
     if (updatedWidget.style) {
-      fetch(`http://localhost:3000/update${topic}-widget/${idDiv}`, {
+      fetch(`http://103.7.40.78:3000/update${topic}-widget/${idDiv}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -212,7 +212,7 @@ function styleLineChart() {
   }
   try {
     if (updatedWidget.style) {
-      fetch(`http://localhost:3000/update${topic}-widget/${idDiv}`, {
+      fetch(`http://103.7.40.78:3000/update${topic}-widget/${idDiv}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -324,7 +324,7 @@ function styleBarChart() {
   }
   try {
     if (updatedWidget.style) {
-      fetch(`http://localhost:3000/update${topic}-widget/${idDiv}`, {
+      fetch(`http://103.7.40.78:3000/update${topic}-widget/${idDiv}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -436,7 +436,7 @@ function styleWater() {
   }
   try {
     if (updatedWidget.style) {
-      fetch(`http://localhost:3000/update${topic}-widget/${idDiv}`, {
+      fetch(`http://103.7.40.78:3000/update${topic}-widget/${idDiv}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -548,7 +548,7 @@ function styleSankey() {
   }
   try {
     if (updatedWidget.style) {
-      fetch(`http://localhost:3000/update${topic}-widget/${idDiv}`, {
+      fetch(`http://103.7.40.78:3000/update${topic}-widget/${idDiv}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -660,7 +660,7 @@ function styleStatus() {
   }
   try {
     if (updatedWidget.style) {
-      fetch(`http://localhost:3000/update${topic}-widget/${idDiv}`, {
+      fetch(`http://103.7.40.78:3000/update${topic}-widget/${idDiv}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
