@@ -63,7 +63,7 @@ async function editWidget() {
     div.addEventListener("mouseup", function () {
       // Tìm span với class "tittle" bên trong div
       tittle = div.querySelector(".tittle").textContent;
-      updatedWidget.tittle = tittle;
+      editWidget.tittle = tittle;
       // Lấy id của div được click
       divId = this.id;
       const computedStyle = window.getComputedStyle(
@@ -75,11 +75,11 @@ async function editWidget() {
       width = computedStyle.width; // Lấy giá trị width tính toán
       height = computedStyle.height; // Lấy giá trị height tính toán
       id = divId;
-      updatedWidget.top = top;
-      updatedWidget.left = left;
-      updatedWidget.width = width;
-      updatedWidget.height = height;
-      updatedWidget.id = id;
+      editWidget.top = top;
+      editWidget.left = left;
+      editWidget.width = width;
+      editWidget.height = height;
+      editWidget.id = id;
       const targetWidget = data.settings.find((object) => object.id === divId);
       editWidget.style = targetWidget.style;
       try {
