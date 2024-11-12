@@ -87,7 +87,7 @@ async function editWidget() {
 
       try {
         if (tittle) {
-          fetch(`http://localhost:3000/update-widget/${id}`, {
+          fetch(`http://103.7.40.78:3000/update-widget/${id}`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
