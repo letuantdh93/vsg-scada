@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./styles/homeStyle.css">
+
+
+<body>
+    <h2>KHO</h2>
+    <img src="./img/edit.png" alt="icon" srcset="" id="properties" onclick="addWidget()">
+    <span id="tooltip">Add Widget</span>
+    <!-- div context menu -->
+    <div id="contextMenu" class="contextMenu">
+        <ul>
+            <li onclick="changeInput()">Change input</li>
+            <li onclick="styleGauge()">Style Gauge</li>
+            <li onclick="styleLineChart()">Style line chart</li>
+            <li onclick="styleBarChart()">Style bar chart</li>
+            <li onclick="styleWater()">Style water fill</li>
+            <li onclick="styleSankey()">Sankey Diagram</li>
+            <li onclick="styleStatus()">Digital Status</li>
+            <li onclick="addWidget()">Add Widget</li>
+            <li onclick="removeWidget(); window.location.reload()">Remove Widget</li>
+        </ul>
+    </div>
+    <!-- div contain input box -->
+    <div id="divInput" class="formInput">
+        <form action="" method="post" id="formInput">
+            <label for="typeInput"> Type Input</label>
+            <select name="type-list" id="typeList">
+                <option value="sql">SQL Data</option>
+                <option value="tcp">TCP/IP</option>
+                <option value="typing">Typing</option>
+                <option value="rtu" disabled>ModBus RTU</option>
+                <option value="excel" disabled>Excel File</option>
+            </select><br>
+            <label for="slaveId">Slave ID</label>
+            <input type="text" id="slaveId"><br>
+            <label for="IpAddr">IP Address/ Port</label>
+            <input type="text" id="IpAddr"><br>
+            <label for="typing">Value</label>
+            <input type="text" id="typing"><br>
+            <label for="account">Account</label>
+            <input type="text" id="account"><br>
+            <label for="PassWord">Password</label>
+            <input type="password" id="PassWord"><br>
+            <button id="buttonSave" type="button" onclick="saveInput()">Save</button>
+            <button id="buttonCancel" type="button" onclick="closeInput()">Cancel</button>
+        </form>
+    </div>
+    <!-- div contain chose style box -->
+    <div id="choseStyle" class="choseStyle">
+        <form action="" method="post" id="formStyle" class="formStyle">
+            <label for="typeWidget"> Type Widget</label>
+            <select name="type-widget" id="typeListWidget">
+                <option value="gauge">Gauge</option>
+                <option value="bar">Bar Char</option>
+                <option value="line">Line Char</option>
+                <option value="fluid" disabled>Fluid</option>
+                <option value="mix" disabled>Excel File</option>
+            </select><br>
+            <label for="timeDuration">Time Duration (h)</label>
+            <input type="text" id="timeDuration"><br>
+            <button type="button" onclick="changeInput()">Next</button>
+        </form>
+    </div>
+
+    <!-- Confirm create new Widget -->
+    <div id="confirm">
+        <span>Confirm Add New Widget?</span><br>
+        <button id="confirmCreate" type="button" onclick="createWidget(); window.location.reload()">Confirm</button>
+        <button id="cancelCreate" type="button" onclick="hideConfirm()">Cancel</button>
+    </div>
+    <!-- div contain widget -->
+    <div id="container"></div>
+    <script src="./scripts/khoScript.js"></script>
+    <script src="./scripts/moveDivKho.js"></script>
+    <script src="./scripts/input.js"></script>
+    <script src="./scripts/saveDataKho.js"></script>
+</body>
+
+</html>

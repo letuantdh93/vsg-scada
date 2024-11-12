@@ -1,0 +1,231 @@
+h2 {
+    display: block;
+    text-align: center;
+}
+
+body #saveScreen {
+    position: absolute;
+    top: 1.5rem;
+    right: 0.1rem;
+}
+
+#contextMenu {
+    border: 1px solid rgb(154, 219, 238);
+    width: 10.9rem;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px rgb(154, 219, 238);
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+
+#contextMenu ul {
+    list-style-type: none;
+    display: inline;
+}
+
+#contextMenu li:hover {
+    background-color: rgb(197, 230, 240);
+    color: black;
+    cursor: pointer;
+}
+
+#contextMenu li {
+    padding: 5px;
+    background-color: white;
+    color: gray;
+    border: 1px solid rgb(154, 219, 238);
+    width: 10rem;
+    text-align: center;
+}
+
+
+#container .widget {
+    border: 1px solid green;
+    position: absolute;
+    display: block;
+    float: left;
+    box-shadow: 2px 2px 5px gainsboro;
+    user-select: none;
+    resize: both;
+    overflow: auto;
+}
+
+#container .tittle {
+    text-align: center;
+    display: block;
+    background-color: rgb(5, 70, 48);
+    border: 1px solid rgb(5, 70, 48);
+    color: white;
+    cursor: move;
+}
+
+#container .option {
+    float: right;
+    display: inline;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#container .option:active {
+    font-size: large;
+}
+
+#container .widget:active {
+    z-index: 998;
+}
+
+form {
+    border: 1px solid chartreuse;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px blanchedalmond;
+    z-index: 9999;
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+}
+
+form input,
+select {
+    margin: 5px 5px;
+    text-align: center;
+    position: relative;
+}
+
+form #typeList {
+    margin-left: 2.5rem;
+}
+
+form #slaveId {
+    margin-left: 3.3rem;
+}
+
+form #typing {
+    margin-left: 4.5rem;
+}
+
+form #account {
+    margin-left: 3.4rem;
+}
+
+form #PassWord {
+    margin-left: 2.95rem;
+}
+
+form button {
+    display: block;
+    margin: auto;
+    width: 6rem;
+    background-color: royalblue;
+    color: white;
+    border: 0cap;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form button:hover {
+    background-color: blue;
+}
+
+#divInput {
+    display: none;
+
+}
+
+#choseStyle {
+    display: none;
+    justify-content: center;
+}
+
+#typeListWidget {
+    margin-left: 2.5rem;
+}
+
+#timeDuration {
+    width: 4.5rem;
+}
+
+body #confirm {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px gray;
+    left: 47%;
+    width: 15rem;
+    height: 100px;
+    z-index: 9999999;
+}
+
+#confirm span {
+    position: relative;
+    display: block;
+    color: red;
+    padding: 1rem;
+}
+
+#confirm #confirmCreate {
+    position: absolute;
+    display: block;
+    top: 3rem;
+    right: 1rem;
+    background-color: rgba(61, 255, 47, 0.524);
+    border: 0px;
+    width: 6rem;
+    height: 2rem;
+}
+
+#confirm #cancelCreate {
+    position: absolute;
+    display: block;
+    top: 3rem;
+    left: 1rem;
+    background-color: rgba(255, 0, 0, 0.6);
+    border: 0px;
+    width: 6rem;
+    height: 2rem;
+}
+
+#confirm #cancelCreate:hover {
+    background-color: red;
+}
+
+#confirm #confirmCreate:hover {
+    background-color: green;
+}
+
+#properties {
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    opacity: 30%;
+}
+
+#properties:hover {
+    opacity: 100%;
+}
+
+#properties:hover~#tooltip {
+    display: block;
+}
+
+#tooltip {
+    color: red;
+    border: 1px solid gainsboro;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    font-weight: bold;
+    display: none;
+}

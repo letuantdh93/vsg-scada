@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./styles/index.css">
+<script src="./scripts/time.js"></script>
+<script src="./scripts/index.js"></script>
+
+<body>
+    <div class="topMenu">
+        <div>VIET SUGAR SCADA</div>
+        <div id="clock">time</div>
+    </div>
+    <div class="sideBar">
+        <div class="menu" id="home" onclick="openHome()">
+            <img src="./img/Home.png" alt="home">
+            <span>TRANG CHU</span>
+        </div>
+        <div class="menu" id="xlm" onclick="openXlm()">
+            <img src="./img/pngtree.png" alt="xlm">
+            <span>XU LY MIA</span>
+        </div>
+        <div class="menu" id="hoaChe" onclick="openHoaChe()">
+            <img src="./img/chemical.png" alt="home">
+            <span>HOA CHE</span>
+        </div>
+        <div class="menu" id="nauDuong" onclick="openNauDuong()">
+            <img src="./img/cooking.png" alt="home">
+            <span>NAU DUONG</span>
+        </div>
+        <div class="menu" id="lyTam" onclick="openLyTam()">
+            <img src="./img/Centrifuge.png" alt="home">
+            <span>LY TAM</span>
+        </div>
+        <div class="menu" id="sayDuong" onclick="openSayDuong()">
+            <img src="./img/dryer.png" alt="home">
+            <span>SAY DUONG</span>
+        </div>
+        <div class="menu" id="dongBao" onclick="openDongBao()">
+            <img src="./img/sugarbag.png" alt="home">
+            <span>DONG BAO</span>
+        </div>
+        <div class="menu" id="loHoi" onclick="openLoHoi()">
+            <img src="./img/Thermal.png" alt="home">
+            <span>LO HOI</span>
+        </div>
+        <div class="menu" id="nhietDien" onclick="openNhietDien()">
+            <img src="./img/electric.png" alt="home">
+            <span>NHIET DIEN</span>
+        </div>
+        <div class="menu" id="XLNT" onclick="openXlNt()">
+            <img src="./img/Water.png" alt="home">
+            <span>XU LY NUOC</span>
+        </div>
+        <div class="menu" id="khoTp" onclick="openKho()">
+            <img src="./img/Storage.png" alt="home">
+            <span>KHO</span>
+        </div>
+        <div class="menu" id="setting" onclick="openSetting()">
+            <img src="./img/Settings.png" alt="home">
+            <span>CAI DAT</span>
+        </div>
+    </div>
+    <div class="webView">
+        <iframe id="frameView" src="home.html" frameborder="0"></iframe>
+    </div>
+</body>
+
+</html>
