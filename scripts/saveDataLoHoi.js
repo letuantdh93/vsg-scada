@@ -34,7 +34,7 @@ function addWidget() {
 }
 function createWidget() {
   document.getElementById("confirm").style.display = "none";
-  fetch("http://localhost:3000/add-lo-hoi-widget", {
+  fetch("http://103.7.40.78:3000/add-lo-hoi-widget", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -52,7 +52,7 @@ function hideConfirm() {
 
 function removeWidget() {
   alert("Da xoa Widget");
-  fetch(`http://localhost:3000/delete-lo-hoi-widget/${divId}`, {
+  fetch(`http://103.7.40.78:3000/delete-lo-hoi-widget/${divId}`, {
     method: "DELETE",
   })
     .then((response) => response.json())
